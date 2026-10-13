@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" data-i18n-title="loginPageTitle">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Login | Afghan Work</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+      <div class="container nav">
+        <!-- BRAND -->
+
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">
+            <img
+              id="siteLogo"
+              src="../assets/images/english-logo.png"
+              alt="Afghan Work"
+            />
+          </span>
+
+          <span class="brand-name" data-i18n="brandName"> AFGHAN WORK </span>
+        </a>
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-links">
+          <a href="../index.html" data-i18n="home"> Home </a>
+
+          <a href="../pages/jobs.html" data-i18n="jobs"> Jobs </a>
+
+          <a href="../pages/employer.html" data-i18n="companies"> Companies </a>
+
+          <a href="../pages/candidates.html" data-i18n="candidates">
+            Candidates
+          </a>
+
+          <a href="../pages/about.html" data-i18n="about"> About </a>
+        </nav>
+
+        <!-- ACTIONS -->
+
+        <div class="nav-actions">
+          <a class="btn btn-light" href="../auth/login.html" data-i18n="login">
+            Login
+          </a>
+
+          <a
+            class="btn btn-primary"
+            href="../auth/register.html"
+            data-i18n="register"
+          >
+            Register
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         LOGIN SECTION
+         ===================================================== -->
+
+    <main class="auth-shell">
+      <div class="auth-card">
+        <!-- AUTH BRAND -->
+
+        <div class="auth-brand">
+          <a class="brand" href="../index.html">
+            <span class="brand-mark">
+              <img
+                id="authLogo"
+                src="../assets/images/english-logo.png"
+                alt="Afghan Work"
+              />
+            </span>
+
+            <span class="brand-name" data-i18n="brandName"> AFGHAN WORK </span>
+          </a>
+        </div>
+
+        <!-- PAGE LABEL -->
+
+        <div class="eyebrow" style="text-align: center" data-i18n="login">
+          Login
+        </div>
+
+        <!-- TITLE -->
+
+        <h1 style="font-size: 35px; text-align: center" data-i18n="welcomeBack">
+          Welcome back
+        </h1>
+
+        <!-- =================================================
+             LOGIN FORM
+             ================================================= -->
+
+        <form id="loginForm" style="margin-top: 25px" novalidate>
+          <!-- EMAIL -->
+
+          <div class="field">
+            <label for="loginEmail" data-i18n="email"> Email Address </label>
+
+            <input
+              id="loginEmail"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              data-i18n-placeholder="emailPlaceholder"
+              autocomplete="email"
+            />
+          </div>
+
+          <!-- PASSWORD -->
+
+          <div class="field">
+            <label for="loginPassword" data-i18n="password"> Password </label>
+
+            <input
+              id="loginPassword"
+              name="password"
+              type="password"
+              placeholder="Create a strong password"
+              data-i18n-placeholder="passwordPlaceholder"
+              autocomplete="current-password"
+            />
+          </div>
+
+          <!-- FORGOT PASSWORD -->
+
+          <a
+            style="color: var(--p); font-weight: 700; font-size: 13px"
+            href="forgot-password.html"
+            data-i18n="forgotPassword"
+          >
+            Forgot password?
+          </a>
+
+          <!-- LOGIN MESSAGE -->
+
+          <div id="loginMessage" style="display: none"></div>
+
+          <!-- LOGIN BUTTON -->
+
+          <button
+            type="submit"
+            id="loginButton"
+            class="btn btn-primary"
+            style="width: 100%; margin-top: 20px"
+            data-i18n="login"
+          >
+            Login
+          </button>
+
+          <!-- REGISTER LINK -->
+
+          <p class="muted" style="text-align: center; margin-top: 18px">
+            <span data-i18n="dontHaveAccount"> Don't have an account? </span>
+
+            <a
+              style="color: var(--p); font-weight: 700"
+              href="register.html"
+              data-i18n="register"
+            >
+              Register
+            </a>
+          </p>
+        </form>
+      </div>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- FOOTER BRAND -->
+
+          <div>
+            <a class="brand" href="../index.html">
+              <span class="brand-mark">
+                <img
+                  id="footerLogo"
+                  src="../assets/images/english-logo.png"
+                  alt="Afghan Work"
+                />
+              </span>
+
+              <span class="brand-name" data-i18n="brandName">
+                AFGHAN WORK
+              </span>
+            </a>
+
+            <p style="margin-top: 12px" data-i18n="footerText">
+              Connecting talented people with meaningful opportunities across
+              Afghanistan.
+            </p>
+          </div>
+
+          <!-- JOB SEEKERS -->
+
+          <div>
+            <h4 data-i18n="jobSeekers">Job Seekers</h4>
+
+            <a href="../pages/jobs.html" data-i18n="findJobs"> Find Jobs </a>
+
+            <a href="../pages/resume-builder.html" data-i18n="resumeBuilder">
+              Resume Builder
+            </a>
+          </div>
+
+          <!-- EMPLOYERS -->
+
+          <div>
+            <h4 data-i18n="employers">Employers</h4>
+
+            <a href="../pages/post-job.html" data-i18n="postJob">
+              Post a Job
+            </a>
+
+            <a href="../pages/employer.html" data-i18n="companies">
+              Companies
+            </a>
+          </div>
+
+          <!-- ACCOUNT -->
+
+          <div>
+            <h4 data-i18n="account">Account</h4>
+
+            <a href="../auth/login.html" data-i18n="login"> Login </a>
+
+            <a href="../auth/register.html" data-i18n="register"> Register </a>
+          </div>
+        </div>
+
+        <!-- COPYRIGHT -->
+
+        <div class="footer-bottom" data-i18n="copyright">
+          © 2026 Afghan Work. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="../assets/js/main.js"></script>
+
+    <script src="../assets/js/language.js"></script>
+
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/auth-guard.js"></script>
+    <script src="../assets/js/languagebutton.js"></script>
+  </body>
+</html>

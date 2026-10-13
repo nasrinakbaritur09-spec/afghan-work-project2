@@ -1,0 +1,236 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title data-i18n-title="resumePageTitle">
+      Resume Builder | Afghan Work
+    </title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">
+            <img
+              src="../assets/images/english-logo.png"
+              alt="Afghan Work"
+            />
+          </span>
+          <span class="brand-name">AFGHAN WORK</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="../index.html" data-i18n="home">Home</a>
+          <a href="../pages/jobs.html" data-i18n="jobs">Jobs</a>
+          <a href="../pages/employer.html" data-i18n="companies">Companies</a>
+          <a href="../pages/candidates.html" data-i18n="candidates">Candidates</a>
+          <a href="../pages/about.html" data-i18n="about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            class="btn btn-light"
+            href="../auth/login.html"
+            data-i18n="login"
+          >Login</a>
+
+          <a
+            class="btn btn-primary"
+            href="../auth/register.html"
+            data-i18n="register"
+          >Register</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow">Afghan Work</div>
+
+          <h1
+            style="font-size: 44px"
+            data-i18n="resumeBuilder"
+          >Resume Builder</h1>
+
+          <p data-i18n="resumeDescription">
+            Professional tools and opportunities for job seekers and employers.
+          </p>
+        </div>
+      </section>
+
+      <!-- Resume Builder -->
+      <section class="section" style="padding-top: 15px">
+        <div class="container">
+          <div class="grid-2">
+
+            <!-- Resume Form -->
+            <div class="card">
+              <div class="field">
+                <label for="resumeFullName" data-i18n="fullName">
+                  Full Name
+                </label>
+
+                <input
+                  type="text"
+                  id="resumeFullName"
+                  name="fullName"
+                  placeholder="Your name"
+                  data-i18n-placeholder="namePlaceholder"
+                  maxlength="100"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="field">
+                <label
+                  for="resumeProfessionalTitle"
+                  data-i18n="professionalTitle"
+                >Professional Title</label>
+
+                <input
+                  type="text"
+                  id="resumeProfessionalTitle"
+                  name="professionalTitle"
+                  placeholder="Frontend Developer"
+                  data-i18n-placeholder="titlePlaceholder"
+                  maxlength="100"
+                />
+              </div>
+
+              <div class="field">
+                <label for="resumeSummary" data-i18n="summary">
+                  Summary
+                </label>
+
+                <textarea
+                  id="resumeSummary"
+                  name="summary"
+                  rows="6"
+                  maxlength="2000"
+                  placeholder="Professional summary"
+                  data-i18n-placeholder="summaryPlaceholder"
+                ></textarea>
+              </div>
+
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="saveResumeButton"
+                data-i18n="saveResume"
+              >Save Resume</button>
+
+              <p
+                id="resumeStatusMessage"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </div>
+
+            <!-- Live Preview -->
+            <div class="card" id="resumePreview">
+              <div class="eyebrow" data-i18n="livePreview">
+                Live Preview
+              </div>
+
+              <h2 id="previewFullName" data-i18n="yourName">
+                Your Name
+              </h2>
+
+              <p
+                class="muted"
+                id="previewProfessionalTitle"
+                data-i18n="professionalTitle"
+              >Professional Title</p>
+
+              <hr
+                style="
+                  border: 0;
+                  border-top: 1px solid var(--line);
+                  margin: 18px 0;
+                "
+              />
+
+              <h3 data-i18n="profile">Profile</h3>
+
+              <p
+                class="muted"
+                id="previewSummary"
+                data-i18n="summaryPreview"
+              >
+                Your professional summary will appear here.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div>
+            <a class="brand" href="../index.html">
+              <span class="brand-mark">
+                <img
+                  src="../assets/images/english-logo.png"
+                  alt="Afghan Work"
+                />
+              </span>
+              <span class="brand-name">AFGHAN WORK</span>
+            </a>
+
+            <p style="margin-top: 12px" data-i18n="footerDescription">
+              Connecting talented people with meaningful opportunities across
+              Afghanistan.
+            </p>
+          </div>
+
+          <div>
+            <h4 data-i18n="jobSeekers">Job Seekers</h4>
+            <a href="../pages/jobs.html" data-i18n="findJobs">Find Jobs</a>
+            <a
+              href="../pages/resume-builder.html"
+              data-i18n="resumeBuilder"
+            >Resume Builder</a>
+          </div>
+
+          <div>
+            <h4 data-i18n="employers">Employers</h4>
+            <a href="../pages/post-job.html" data-i18n="postJob">Post a Job</a>
+            <a href="../pages/employer.html" data-i18n="companies">Companies</a>
+          </div>
+
+          <div>
+            <h4 data-i18n="account">Account</h4>
+            <a href="../auth/login.html" data-i18n="login">Login</a>
+            <a href="../auth/register.html" data-i18n="register">Register</a>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Afghan Work.
+          <span data-i18n="allRightsReserved">All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/user/resume-builder.js"></script>
+    <script src="../assets/js/auth-guard.js"></script>
+  </body>
+</html>

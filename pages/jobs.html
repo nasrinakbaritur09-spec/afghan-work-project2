@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Jobs | Afghan Work</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">
+            <img
+              src="../assets/images/english-logo.png"
+              alt="Afghan Work logo"
+              data-job-alt="logoAlt"
+            />
+          </span>
+          <span class="brand-name" data-i18n="brandName"> AFGHAN WORK </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="../index.html" data-job-i18n="home">Home</a>
+          <a class="active" href="../pages/jobs.html" data-job-i18n="jobs">Jobs</a>
+          <a href="../pages/employer.html" data-job-i18n="companies">Companies</a>
+          <a href="../pages/candidates.html" data-job-i18n="candidates">Candidates</a>
+          <a href="../pages/about.html" data-job-i18n="about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            class="btn btn-light"
+            href="../auth/login.html"
+            data-job-i18n="login"
+          >Login</a>
+
+          <a
+            class="btn btn-primary"
+            href="../auth/register.html"
+            data-job-i18n="register"
+          >Register</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- PAGE HERO -->
+      <section class="page-hero">
+        <div class="container">
+          <div class="eyebrow" data-job-i18n="eyebrow">
+            Job opportunities
+          </div>
+
+          <h1 data-job-i18n="heroTitle">
+            Find your next opportunity
+          </h1>
+
+          <p data-job-i18n="heroDescription">
+            Search professional jobs from trusted employers across Afghanistan.
+          </p>
+        </div>
+      </section>
+
+      <!-- JOB SEARCH -->
+      <section class="section" style="padding-top: 15px">
+        <div class="container">
+          <div class="search-box">
+            <input
+              type="search"
+              id="jobKeyword"
+              placeholder="Job title, skill or keyword"
+              data-job-placeholder="keywordPlaceholder"
+              aria-label="Search by job title or keyword"
+            />
+
+            <input
+              type="search"
+              id="jobLocation"
+              placeholder="Location"
+              data-job-placeholder="locationPlaceholder"
+              aria-label="Search by location"
+            />
+
+            <select id="jobCategory" aria-label="Job category">
+              <option value="all" data-job-category-option="allCategories">
+                All Categories
+              </option>
+
+              <option value="technology" data-job-category-option="technology">
+                Technology
+              </option>
+
+              <option value="design" data-job-category-option="design">
+                Design
+              </option>
+
+              <option value="business" data-job-category-option="business">
+                Business
+              </option>
+
+              <option value="marketing" data-job-category-option="marketing">
+                Marketing
+              </option>
+
+              <option value="support" data-job-category-option="support">
+                Customer Support
+              </option>
+            </select>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="jobSearchButton"
+              data-job-i18n="search"
+            >
+              Search
+            </button>
+          </div>
+
+          <!-- JOB RESULTS -->
+          <div class="grid-3" id="jobResults" style="margin-top: 28px">
+
+            <!-- JOB 1 -->
+            <article
+              class="card job-card"
+              data-category="technology"
+              data-location="Kabul"
+            >
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    src="../assets/images/english-logo.png"
+                    alt="Afghan Tech Solutions"
+                  />
+                </div>
+
+                <span class="badge badge-blue" data-job-type="fullTime">
+                  Full Time
+                </span>
+              </div>
+
+              <div>
+                <h3 data-job-title="job1Title">Frontend Developer</h3>
+                <p data-job-company="job1Company">Afghan Tech Solutions</p>
+              </div>
+
+              <div class="job-meta">
+                <span class="job-icon location-icon"></span>
+                <span data-job-location="kabul">Kabul</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon work-icon"></span>
+                <span data-job-type="fullTime">Full Time</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon salary-icon"></span>
+                <span data-job-salary="salary1">$600–900</span>
+              </div>
+
+              <div class="job-bottom">
+                <span class="salary" data-job-salary="salary1">$600–900</span>
+
+                <a
+                  class="btn btn-primary"
+                  href="job-details.html?id=1"
+                  data-job-i18n="viewDetails"
+                >View Details</a>
+              </div>
+            </article>
+
+            <!-- JOB 2 -->
+            <article
+              class="card job-card"
+              data-category="design"
+              data-location="Parwan"
+            >
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    src="../assets/images/english-logo.png"
+                    alt="Creative Afghanistan"
+                  />
+                </div>
+
+                <span class="badge badge-blue" data-job-type="fullTime">
+                  Full Time
+                </span>
+              </div>
+
+              <div>
+                <h3 data-job-title="job2Title">Graphic Designer</h3>
+                <p data-job-company="job2Company">Creative Afghanistan</p>
+              </div>
+
+              <div class="job-meta">
+                <span class="job-icon location-icon"></span>
+                <span data-job-location="parwan">Parwan</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon work-icon"></span>
+                <span data-job-type="fullTime">Full Time</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon salary-icon"></span>
+                <span data-job-salary="salary2">$400–700</span>
+              </div>
+
+              <div class="job-bottom">
+                <span class="salary" data-job-salary="salary2">$400–700</span>
+
+                <a
+                  class="btn btn-primary"
+                  href="job-details.html?id=2"
+                  data-job-i18n="viewDetails"
+                >View Details</a>
+              </div>
+            </article>
+
+            <!-- JOB 3 -->
+            <article
+              class="card job-card"
+              data-category="business"
+              data-location="Kabul"
+            >
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    src="../assets/images/english-logo.png"
+                    alt="Kabul Business Group"
+                  />
+                </div>
+
+                <span class="badge badge-blue" data-job-type="fullTime">
+                  Full Time
+                </span>
+              </div>
+
+              <div>
+                <h3 data-job-title="job3Title">Accountant</h3>
+                <p class="muted" data-job-company="job3Company">
+                  Kabul Business Group
+                </p>
+              </div>
+
+              <div class="job-meta">
+                <span class="job-icon location-icon"></span>
+                <span data-job-location="kabul">Kabul</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon work-icon"></span>
+                <span data-job-type="fullTime">Full Time</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon salary-icon"></span>
+                <span data-job-salary="salary3">$400–700</span>
+              </div>
+
+              <div class="job-bottom">
+                <span class="salary" data-job-salary="salary3">$400–700</span>
+
+                <a
+                  class="btn btn-primary"
+                  href="job-details.html?id=3"
+                  data-job-i18n="viewDetails"
+                >View Details</a>
+              </div>
+            </article>
+
+            <!-- JOB 4 -->
+            <article
+              class="card job-card"
+              data-category="marketing"
+              data-location="Herat"
+            >
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    src="../assets/images/english-logo.png"
+                    alt="Herat Media House"
+                  />
+                </div>
+
+                <span class="badge badge-blue" data-job-type="fullTime">
+                  Full Time
+                </span>
+              </div>
+
+              <div>
+                <h3 data-job-title="job4Title">Digital Marketing Specialist</h3>
+                <p class="muted" data-job-company="job4Company">
+                  Herat Media House
+                </p>
+              </div>
+
+              <div class="job-meta">
+                <span class="job-icon location-icon"></span>
+                <span data-job-location="herat">Herat</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon work-icon"></span>
+                <span data-job-type="fullTime">Full Time</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon salary-icon"></span>
+                <span data-job-salary="salary4">$500–850</span>
+              </div>
+
+              <div class="job-bottom">
+                <span class="salary" data-job-salary="salary4">$500–850</span>
+
+                <a
+                  class="btn btn-primary"
+                  href="job-details.html?id=4"
+                  data-job-i18n="viewDetails"
+                >View Details</a>
+              </div>
+            </article>
+
+            <!-- JOB 5 -->
+            <article
+              class="card job-card"
+              data-category="business"
+              data-location="Kabul"
+            >
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    src="../assets/images/english-logo.png"
+                    alt="Afghan Development Network"
+                  />
+                </div>
+
+                <span class="badge badge-blue" data-job-type="fullTime">
+                  Full Time
+                </span>
+              </div>
+
+              <div>
+                <h3 data-job-title="job5Title">Project Coordinator</h3>
+                <p class="muted" data-job-company="job5Company">
+                  Afghan Development Network
+                </p>
+              </div>
+
+              <div class="job-meta">
+                <span class="job-icon location-icon"></span>
+                <span data-job-location="kabul">Kabul</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon work-icon"></span>
+                <span data-job-type="fullTime">Full Time</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon salary-icon"></span>
+                <span data-job-salary="salary5">$650–950</span>
+              </div>
+
+              <div class="job-bottom">
+                <span class="salary" data-job-salary="salary5">$650–950</span>
+
+                <a
+                  class="btn btn-primary"
+                  href="job-details.html?id=5"
+                  data-job-i18n="viewDetails"
+                >View Details</a>
+              </div>
+            </article>
+
+            <!-- JOB 6 -->
+            <article
+              class="card job-card"
+              data-category="support"
+              data-location="Balkh"
+            >
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    src="../assets/images/english-logo.png"
+                    alt="National Services Co."
+                  />
+                </div>
+
+                <span class="badge badge-blue" data-job-type="fullTime">
+                  Full Time
+                </span>
+              </div>
+
+              <div>
+                <h3 data-job-title="job6Title">Customer Support Officer</h3>
+                <p class="muted" data-job-company="job6Company">
+                  National Services Co.
+                </p>
+              </div>
+
+              <div class="job-meta">
+                <span class="job-icon location-icon"></span>
+                <span data-job-location="balkh">Balkh</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon work-icon"></span>
+                <span data-job-type="fullTime">Full Time</span>
+
+                <span class="meta-separator">·</span>
+                <span class="job-icon salary-icon"></span>
+                <span data-job-salary="salary6">$350–550</span>
+              </div>
+
+              <div class="job-bottom">
+                <span class="salary" data-job-salary="salary6">$350–550</span>
+
+                <a
+                  class="btn btn-primary"
+                  href="job-details.html?id=6"
+                  data-job-i18n="viewDetails"
+                >View Details</a>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- NO RESULTS -->
+          <p id="noJobResults" class="muted" role="status" hidden>
+            No jobs match your search. Try another keyword.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="../index.html">
+              <span class="brand-mark">
+                <img
+                  src="../assets/images/english-logo.png"
+                  alt="Afghan Work logo"
+                  data-job-alt="logoAlt"
+                />
+              </span>
+
+               <span class="brand-name" data-i18n="brandName"> AFGHAN WORK </span>
+            </a>
+
+            <p style="margin-top: 12px" data-job-i18n="footerDescription">
+              Connecting talented people with meaningful opportunities across
+              Afghanistan.
+            </p>
+          </div>
+
+          <div>
+            <h4 data-job-i18n="jobSeekers">Job Seekers</h4>
+            <a href="../pages/jobs.html" data-job-i18n="findJobs">Find Jobs</a>
+            <a
+              href="../pages/resume-builder.html"
+              data-job-i18n="resumeBuilder"
+            >Resume Builder</a>
+          </div>
+
+          <div>
+            <h4 data-job-i18n="employers">Employers</h4>
+            <a href="../pages/post-job.html" data-job-i18n="postJob">Post a Job</a>
+            <a href="../pages/employer.html" data-job-i18n="companies">Companies</a>
+          </div>
+
+          <div>
+            <h4 data-job-i18n="account">Account</h4>
+            <a href="../auth/login.html" data-job-i18n="login">Login</a>
+            <a href="../auth/register.html" data-job-i18n="register">Register</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          © 2026 Afghan Work.
+          <span data-job-i18n="copyright">All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SITE SCRIPTS -->
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/job.js" defer></script>
+    <script src="../assets/js/language.js" defer></script>
+    <script src="../assets/js/auth-guard.js" defer></script>
+  </body>
+</html>

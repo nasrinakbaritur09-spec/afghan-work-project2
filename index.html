@@ -1,0 +1,445 @@
+<!doctype html>
+<html data-i18n-title="pageTitle" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Home | Afghan Work</title>
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-..."
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="threeDBackground">
+      <div class="bg-orb orb-1"></div>
+      <div class="bg-orb orb-2"></div>
+      <div class="bg-orb orb-3"></div>
+      <div class="bg-grid"></div>
+    </div>
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="site-header">
+      <div class="container nav">
+        <!-- Logo -->
+        <a class="brand" href="index.html">
+          <span class="brand-mark">
+            <img alt="Afghan Work Logo" src="assets/images/english-logo.png" />
+          </span>
+          <span class="brand-name" data-i18n="brandName"> AFGHAN WORK </span>
+        </a>
+        <!-- Navigation -->
+        <nav class="nav-links">
+          <a data-i18n="home" href="index.html"> Home </a>
+          <a data-i18n="jobs" href="pages/jobs.html"> Jobs </a>
+          <a data-i18n="companies" href="pages/employer.html"> Companies </a>
+          <a data-i18n="candidates" href="pages/candidates.html">
+            Candidates
+          </a>
+          <a data-i18n="about" href="pages/about.html"> About </a>
+        </nav>
+        <div class="nav-actions">
+          <div class="language-switcher">
+            <button class="language-btn" data-language="en" type="button">
+              EN
+            </button>
+            <button class="language-btn" data-language="fa" type="button">
+              دری
+            </button>
+            <button class="language-btn" data-language="ps" type="button">
+              پښتو
+            </button>
+          </div>
+          <a class="btn btn-light" data-i18n="login" href="auth/login.html">
+            Login
+          </a>
+          <a
+            class="btn btn-primary"
+            data-i18n="register"
+            href="auth/register.html"
+          >
+            Register
+          </a>
+        </div>
+        <!-- Mobile Burger Menu -->
+        <button aria-label="Open menu" class="menu-toggle" type="button">
+          <span> </span>
+          <span> </span>
+          <span> </span>
+        </button>
+      </div>
+    </header>
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main>
+      <!-- =========================
+             HERO
+        ========================== -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <!-- Hero Content -->
+          <div class="hero-content">
+            <span class="eyebrow" data-i18n="careerPlatform">
+              PROFESSIONAL CAREER PLATFORM
+            </span>
+            <h1 data-i18n="heroTitle">Find Your Dream Job</h1>
+            <p class="lead" data-i18n="heroText">
+              Discover trusted career opportunities across Afghanistan and
+              connect with companies that value your skills and experience.
+            </p>
+            <!-- Search -->
+            <form class="search-box search-form">
+              <div class="search-field">
+                <span class="search-icon search-job-icon"> </span>
+                <input
+                  data-i18n-placeholder="keywordPlaceholder"
+                  id="keyword"
+                  name="keyword"
+                  placeholder="Job title, skill or keyword"
+                  type="text"
+                />
+              </div>
+              <div class="search-field">
+                <span class="search-icon search-location-icon"> </span>
+                <input
+                  data-i18n-placeholder="locationPlaceholder"
+                  id="location"
+                  name="location"
+                  placeholder="Location"
+                  type="text"
+                />
+              </div>
+              <div class="search-field">
+                <span class="search-icon search-category-icon"> </span>
+                <select
+                  aria-label="Job category"
+                  data-i18n-aria-label="jobType"
+                  id="category"
+                  name="category"
+                >
+                  <option data-i18n="allCategories">All Categories</option>
+                  <option data-i18n="technology">Technology</option>
+                  <option data-i18n="design">Design</option>
+                  <option data-i18n="finance">Finance</option>
+                  <option data-i18n="marketing">Marketing</option>
+                  <option data-i18n="education">Education</option>
+                </select>
+              </div>
+              <button
+                class="btn btn-primary search-btn"
+                data-i18n="search"
+                href="pages/jobs.html"
+                type="submit"
+              >
+                Search Jobs
+              </button>
+            </form>
+            <!-- Popular Searches -->
+            <div class="popular-searches">
+              <span data-i18n="popular"> Popular: </span>
+              <a data-i18n="webDeveloper" href="pages/jobs.html">
+                Web Developer
+              </a>
+              <a data-i18n="graphicDesigner" href="pages/jobs.html">
+                Graphic Designer
+              </a>
+              <a data-i18n="accountant" href="pages/jobs.html"> Accountant </a>
+            </div>
+          </div>
+          <!-- =========================
+                     HERO VISUAL
+                ========================== -->
+          <div class="hero-visual">
+            <div class="visual-card">
+              <!-- Image -->
+              <div class="visual-photo">
+                <img
+                  alt="Professional Afghan workplace"
+                  src="assets/images/team1.png"
+                />
+              </div>
+              <!-- Card Information -->
+              <div class="visual-info">
+                <div class="visual-stat">
+                  <strong> 2,500+ </strong>
+                  <span data-i18n="jobOpportunities"> Job Opportunities </span>
+                </div>
+                <div class="visual-divider"></div>
+                <div class="visual-stat">
+                  <strong> 850+ </strong>
+                  <span data-i18n="companies"> Companies </span>
+                </div>
+              </div>
+            </div>
+            <!-- Verified Card -->
+            <div class="float-card float-one">
+              <span class="status-icon"> </span>
+              <div>
+                <strong data-i18n="verifiedEmployers">
+                  Verified Employers
+                </strong>
+                <small data-i18n="trustedCompanies"> Trusted companies </small>
+              </div>
+            </div>
+            <!-- Candidates Card -->
+            <div class="float-card float-two">
+              <span class="candidate-icon"> </span>
+              <div>
+                <strong> 10,000+ </strong>
+                <small data-i18n="activeCandidates"> Active Candidates </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================
+             LATEST JOBS
+        ========================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow" data-i18n="latestOpportunities">
+                LATEST OPPORTUNITIES
+              </span>
+              <h2 data-i18n="latestJobs">Latest Jobs</h2>
+              <p class="section-description" data-i18n="latestJobsText">
+                Explore the latest career opportunities from trusted employers.
+              </p>
+            </div>
+            <a class="btn btn-light" data-i18n="allJobs" href="pages/jobs.html">
+              View All Jobs
+            </a>
+          </div>
+          <!-- Jobs -->
+          <div class="grid-3">
+            <!-- JOB 1 -->
+            <article class="card job-card">
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    alt="Afghan Tech Solutions"
+                    src="assets/images/english-logo.png"
+                  />
+                </div>
+                <span class="badge badge-blue" data-i18n="fullTime">
+                  Full Time
+                </span>
+              </div>
+              <div class="job-content">
+                <h3 data-i18n="frontendDeveloper">Frontend Developer</h3>
+                <p class="muted">Afghan Tech Solutions</p>
+              </div>
+              <div class="job-meta">
+                <span class="meta-item">
+                  <span class="meta-icon location-icon"> </span>
+                  <span data-i18n="kabul"> Kabul </span>
+                </span>
+                <span class="meta-item">
+                  <span class="meta-icon salary-icon"> </span>
+                  $600&ndash;900
+                </span>
+              </div>
+              <div class="job-bottom">
+                <span class="salary"> $600&ndash;900 </span>
+                <a
+                  class="btn btn-primary"
+                  data-i18n="viewJob"
+                  href="pages/job-details.html?id=1"
+                >
+                  View Job
+                </a>
+              </div>
+            </article>
+            <!-- JOB 2 -->
+            <article class="card job-card">
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    alt="Creative Afghanistan"
+                    src="assets/images/english-logo.png"
+                  />
+                </div>
+                <span class="badge badge-blue" data-i18n="fullTime">
+                  Full Time
+                </span>
+              </div>
+              <div class="job-content">
+                <h3 data-i18n="graphicDesignerJob">Graphic Designer</h3>
+                <p class="muted">Creative Afghanistan</p>
+              </div>
+              <div class="job-meta">
+                <span class="meta-item">
+                  <span class="meta-icon location-icon"> </span>
+                  <span data-i18n="parwan"> Parwan </span>
+                </span>
+                <span class="meta-item">
+                  <span class="meta-icon salary-icon"> </span>
+                  $400&ndash;700
+                </span>
+              </div>
+              <div class="job-bottom">
+                <span class="salary"> $400&ndash;700 </span>
+                <a
+                  class="btn btn-primary"
+                  data-i18n="viewJob"
+                  href="pages/job-details.html?id=2"
+                >
+                  View Job
+                </a>
+              </div>
+            </article>
+            <!-- JOB 3 -->
+            <article class="card job-card">
+              <div class="job-top">
+                <div class="company-logo">
+                  <img
+                    alt="Kabul Business Group"
+                    src="assets/images/english-logo.png"
+                  />
+                </div>
+                <span class="badge badge-blue" data-i18n="fullTime">
+                  Full Time
+                </span>
+              </div>
+              <div class="job-content">
+                <h3 data-i18n="accountantJob">Accountant</h3>
+                <p class="muted">Kabul Business Group</p>
+              </div>
+              <div class="job-meta">
+                <span class="meta-item">
+                  <span class="meta-icon location-icon"> </span>
+                  <span data-i18n="kabul"> Kabul </span>
+                </span>
+                <span class="meta-item">
+                  <span class="meta-icon salary-icon"> </span>
+                  $400&ndash;700
+                </span>
+              </div>
+              <div class="job-bottom">
+                <span class="salary"> $400&ndash;700 </span>
+                <a
+                  class="btn btn-primary"
+                  data-i18n="viewJob"
+                  href="pages/job-details.html?id=3"
+                >
+                  View Job
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- =========================
+             STATISTICS
+        ========================== -->
+      <section class="statistics-section">
+        <div class="container">
+          <div class="statistics-grid">
+            <div class="stat-card">
+              <span class="stat-number"> 2,500+ </span>
+              <span class="stat-label" data-i18n="jobOpportunities">
+                Job Opportunities
+              </span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number"> 10,000+ </span>
+              <span class="stat-label" data-i18n="candidates">
+                Candidates
+              </span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number"> 850+ </span>
+              <span class="stat-label" data-i18n="companies"> Companies </span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number"> 5,000+ </span>
+              <span class="stat-label" data-i18n="successfulHires">
+                Successful Hires
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <span class="brand-mark">
+                <img
+                  alt="Afghan Work Logo"
+                  src="assets/images/english-logo.png"
+                />
+              </span>
+              <span class="brand-name" data-i18n="brandName">
+                AFGHAN WORK
+              </span>
+            </a>
+            <p data-i18n="footerText">
+              Connecting talented people with meaningful career opportunities
+              across Afghanistan.
+            </p>
+          </div>
+          <!-- Job Seekers -->
+          <div class="footer-column">
+            <h4 data-i18n="jobSeekers">Job Seekers</h4>
+            <a data-i18n="findJobs" href="pages/jobs.html"> Find Jobs </a>
+            <a data-i18n="resumeBuilder" href="pages/resume-builder.html">
+              Resume Builder
+            </a>
+            <a data-i18n="exploreCandidates" href="pages/candidates.html">
+              Explore Candidates
+            </a>
+          </div>
+          <!-- Employers -->
+          <div class="footer-column">
+            <h4 data-i18n="employers">Employers</h4>
+            <a data-i18n="postJob" href="pages/post-job.html"> Post a Job </a>
+            <a data-i18n="companies" href="pages/employer.html"> Companies </a>
+            <a data-i18n="applications" href="pages/applications.html">
+              Applications
+            </a>
+          </div>
+          <!-- Account -->
+          <div class="footer-column">
+            <h4 data-i18n="account">Account</h4>
+            <a data-i18n="login" href="auth/login.html"> Login </a>
+            <a data-i18n="createAccount" href="auth/register.html">
+              Create Account
+            </a>
+            <a data-i18n="profile" href="pages/profile.html"> My Profile </a>
+          </div>
+        </div>
+        <!-- Bottom -->
+        <div class="footer-bottom">
+          <span data-i18n="copyright">
+            &copy; 2026 Afghan Work. All rights reserved.
+          </span>
+          <div class="footer-links">
+            <a data-i18n="privacyPolicy" href="pages/privacy.html">
+              Privacy Policy
+            </a>
+            <a data-i18n="termsOfService" href="pages/terms.html">
+              Terms of Service
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/auth-guard.js"></script>
+  </body>
+</html>
